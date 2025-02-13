@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frohen Valentinstag</title>
+    <link rel="stylesheet" href="startseite.css">
+</head>
+<body>
+	<div class="text">
+	<h3>Ich habe hier kleine buttons versteckt, findest du sie alle?</h3>
+	</div>
+    <div class="container">
+		<div class="text-box">
+		<h2>🤍🩷🤍🩷🤍I love you!🤍🩷🤍🩷🤍</h2>
+        <h1>🤍​Frohen Valentinstag🤍​​</h1>
+		<h2>Du hast hier einiges zu entdecken</h2>
+		</div>
+		<div class="hidden-buttons">
+					<button id="button1" class="rechts-oben" onclick="showGif('button1', 'gifs/herzanimation2.gif')">​🫀​</button>
+					<button id="button2" class="links-oben" onclick="showGif('button2', 'gifs/schmetterlinge.gif')">🦋​</button>
+					<button id="button3" class="unten-rechts" onclick="showGif('button3', 'gifs/herzdrehen - Kopie.gif')">🩷​</button>
+
+		</div>
+		
+		<img src="gifs/herzdrehen - Kopie.gif" alt="SpinningHeart" class="heart-gif">
+		<img src="gifs/herzdrehen - Kopie.gif" alt="SpinningHeart2" class="heart-gif2">
+		<img src="gifs/kirby.gif" alt="Kirby" class="kirby-gif">
+		
+			<button id="confetti-button" class ="confetti-button">🤍</button>
+
+			<canvas id="heart-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+
+
+
+
+        <div class="button-container">
+            <button class="snake-button" onclick="window.location.href='snake.html'">🤍Snake</button>
+            <button class="galerie-button" onclick="window.location.href='galerie.html'">🤍Galerie</button>
+            <button class="pixel-button" onclick="window.location.href='pixelart/index.html'">🚧Pixelart​👷🏻‍♀️​</button>
+        </div>
+    </div>
+    <script src="startseite.js"></script>
+</body>
+</html>

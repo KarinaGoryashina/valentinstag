@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+	background-image: url('bilder/background15.png');
+	background-size: cover;  /* Bild skaliert, um den gesamten Hintergrund zu füllen */
+    background-position: center;  /* Bild wird in der Mitte positioniert */
+    background-repeat: no-repeat;
+}
+
+h1 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+	margin-bottom: 30px;
+    color: white;
+	font-size: 50px;
+}
+#startScreen {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+	margin-bottom: 30px;
+    color: white;
+	font-size: 20px;
+}
+
+#gameOverMessage {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    font-size: 24px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#score {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    margin-bottom: 10px;
+	color: white;
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(10px);
+	background-image: 
+        linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+        linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;  /* Größe der Rasterzellen (Boxgröße) */
+}
+
+.hidden {
+    display: none;
+}
+
+.rechts-oben, .schlange, .unten-rechts {
+    background-color: rgba(255, 255, 255, 0); /* Hintergrund durchsichtig */
+    border: none; /* Keine Umrandung */
+    color: rgba(255, 255, 255, 0.8); /* Textfarbe leicht sichtbar */
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Sanfter Übergang */
+}
+.zurück-button {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	backdrop-filter: blur(10px);
+	font-size: 20px;
+	position: fixed;
+	top: 40px;
+	left: 40px;
+}
+
+.zurück-button:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hidden {
+    display: none;
+}
+
+.animated-gif {
+    position: fixed;
+    width: 150px; /* Größe anpassen */
+    height: auto;
+}
+
+.rechts-oben {
+	position: fixed;
+	bottom: 15px;
+	right: 50px;
+}
+
+.schlange {
+	position: fixed;
+	bottom: 20px;
+	left: 45px;
+}
+
+.unten-rechts {
+	position: fixed;
+	top: 40px;
+	right: 50px;
+}
+
+

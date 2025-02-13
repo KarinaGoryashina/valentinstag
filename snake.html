@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Spiel</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <h1>🐍​Snake🍎​</h1>
+	
+	<div class="hidden-buttons">
+					<button id="button1" class="rechts-oben" onclick="showGif('button1', 'gifs/heart - Kopie.gif')">​💚​</button>
+					<button id="button2" class="schlange" onclick="showGif('button2', 'gifs/schlange.gif')">🐍​​</button>
+					<button id="button3" class="unten-rechts" onclick="showGif('button3', 'gifs/baloons - Kopie.gif')">💛​​</button>
+					<button class="zurück-button" onclick="window.location.href='startseite.html'"> <- Zurück zur Startseite</button>
+	</div>
+					
+    <div id="startScreen">
+        Drücke <strong>Leertaste</strong>, um das Spiel zu starten!
+    </div>
+    <div id="gameOverMessage" class="hidden">Game Over! Deine Punktzahl: <span id="finalScore">0</span></div>
+    <div id="score">Punkte: 0</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <script src="snake.js"></script>
+</body>
+</html>

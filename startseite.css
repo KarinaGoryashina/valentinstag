@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcccb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	background-image: url('bilder/back14.png');
+	background-size: cover;  /* Bild skaliert, um den gesamten Hintergrund zu füllen */
+    background-position: center;  /* Bild wird in der Mitte positioniert */
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+	margin-bottom: 30px;
+    color: white;
+	font-size: 60px;
+}
+
+h2 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	margin-bottom: 30px;
+	color: white;
+	font-size: 25px;
+	
+}
+
+.text {
+	position: fixed;
+	bottom: 12px;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	
+}
+
+.button-container {
+	
+    display: flex;
+    gap: 100px; /* Abstand zwischen den Buttons */
+}
+
+.snake-button {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 72px 72px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+	background-image: url('gifs/pc - Kopie.png'); /* Dein Bild */
+    background-size: cover; /* Bild skaliert, um den Button zu füllen */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	backdrop-filter: blur(10px);
+}
+
+.snake-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+	background-image: url('gifs/pc - Kopie.gif'); /* Dein Bild */
+    background-size: cover; /* Bild skaliert, um den Button zu füllen */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.galerie-button {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 72px 72px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+	background-image: url('gifs/herzplanet - Kopie.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	backdrop-filter: blur(10px);
+}
+
+.galerie-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+	background-image: url('gifs/herzplanet - Kopie.gif'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pixel-button {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 72px 72px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+	background-image: url('gifs/planet.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	backdrop-filter: blur(10px);
+}
+
+.pixel-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+	background-image: url('gifs/planet.gif'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.3); /* Weiß mit 30% Transparenz */
+    padding: 20px; /* Innenabstand */
+    border-radius: 15px; /* Abgerundete Ecken */
+    text-align: center;
+    max-width: 950px; /* Begrenzte Breite */
+    margin: 20px auto; /* Zentriert */
+    backdrop-filter: blur(10px); /* Weicher Glas-Effekt */
+}
+
+.hidden {
+    display: none;
+}
+
+.animated-gif {
+    position: fixed;
+    width: 150px; /* Größe anpassen */
+    height: auto;
+}
+
+.rechts-oben {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+
+.links-oben {
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
+
+.unten-rechts {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+
+.rechts-oben, .links-oben, .unten-rechts {
+    background-color: rgba(255, 255, 255, 0); /* Hintergrund durchsichtig */
+    border: none; /* Keine Umrandung */
+    color: rgba(255, 255, 255, 0.8); /* Textfarbe leicht sichtbar */
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Sanfter Übergang */
+}
+
+.heart-gif {
+	position: fixed;
+	left: 15px;
+	width: 150px; /* Setzt die Breite des GIFs */
+    height: auto;
+}
+.heart-gif2 {
+	position: fixed;
+	right: 15px;
+	width: 150px; /* Setzt die Breite des GIFs */
+    height: auto;
+}
+
+.kirby-gif {
+	
+	bottom: 15px;
+	right: 740px;
+	width: 70px; /* Setzt die Breite des GIFs */
+    height: auto;
+	position: absolute;
+    
+	
+}
+
+.confetti-button {
+	
+	background-color: rgba(255, 255, 255, 0); /* Hintergrund durchsichtig */
+    border: none; /* Keine Umrandung */
+    color: rgba(255, 255, 255, 0.8); /* Textfarbe leicht sichtbar */
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Sanfter Übergang */
+	
+	position: fixed;
+	bottom: 15px;
+	right: 705px;
+}
+
+

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+	background-image: url('bilder/back9.png'); /* Hier dein Bild einfügen */
+    background-repeat: repeat;
+    background-size: auto; /* Bildgröße automatisch beibehalten */
+	background-attachment: fixed;
+    
+}
+
+.gallery-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.gallery-row img {
+    width: auto; /* Bild in der Originalgröße anzeigen */
+    height: 550px; /* Höhe ebenfalls in der Originalgröße anzeigen */
+    max-width: 100%; /* Sicherstellen, dass das Bild nicht breiter als der Container wird */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+	padding: 10px;
+	border-radius: 7px;
+	border: 5px solid white;
+}
+
+.gallery-row1 img {
+    width: auto; /* Bild in der Originalgröße anzeigen */
+    height: 550px; /* Höhe ebenfalls in der Originalgröße anzeigen */
+    max-width: 100%; /* Sicherstellen, dass das Bild nicht breiter als der Container wird */
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+
+.gallery-row img:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    
+    margin: 20px 0;
+    font-size: 45px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+	margin: 20px 0;
+    font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+	margin: 20px 0;
+    font-size: 50px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	text-align: center;
+}

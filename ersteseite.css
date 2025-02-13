@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffccd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;background-image: url('bilder/background2.jpg');
+	background-size: cover;  /* Bild skaliert, um den gesamten Hintergrund zu füllen */
+    background-position: center;  /* Bild wird in der Mitte positioniert */
+    background-repeat: no-repeat;
+}
+
+.container {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-size: 50px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff99cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a61e65;
+}
